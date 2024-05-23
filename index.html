@@ -10,15 +10,15 @@
 </head>
 <body>
     
-    <header>
+    <header id="header">
         <div class="header-container">
             <img class="logo" src="img/logo.png" alt="beat logo">
             <nav>
                 <ul class="nav-menu">
                     <li class="menu-list"><a href="#">INICIO</a></li>
-                    <li class="menu-list"><a href="acerca-de.html">ACERCA DE</a></li>
-                    <li class="menu-list"><a href="contactos.html">CONTACTOS</a></li>
-                    <li class="menu-list"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="menu-list"><a href="#">ACERCA DE</a></li>
+                    <li class="menu-list"><a href="#">CONTACTOS</a></li>
+                    <li class="menu-list"><a href="#">NOSOTROS</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,7 +26,7 @@
                 <h2 class="header-titulo">Beats Studio</h2>
                 <h3 class="header-titulo-2">Wierless</h3>
                 <p class="header-detalle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit doloremque placeat vero illum dolorem cum, aliquid eveniet! Commodi tempora placeat iste, deleniti modi excepturi tenetur ad perspiciatis suscipit iure eum.</p>
-                <button class="btn"><a href="#">Comprar</a></button>
+                <button class="btn">Comprar</button>
             </div>
     </header>
 
@@ -34,7 +34,7 @@
         <div class="info-detalle">
             <h3>Informacion del Producto</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugit deserunt facere odio esse animi nam tempora aut, illo dolor quisquam dolorum sit neque a modi debitis harum quaerat odit!</p>
-            <button class="btn"><a href="#">Leer mas</a></button>
+            <button class="btn">Leer Mas</button>
         </div>
         <div class="imagen-producto">
             <img src="img/auricularres.png" alt="">
@@ -50,7 +50,7 @@
         <div class="info-titulo"><h3>Colores Disponibles</h3></div>
         <div class="info-titulo-detalle"><p>ENCUENTRA TU COLOR</p></div>
         <ul class="modelos">
-            <li class="negro">
+            <li class="modelo negro">
                 <img class="beatsimagen" src="img/auris-negros.jpg" alt="">
                 <div class="beat-detalle">
                     <h4>BEATS SOLO 3 INALAMBRICO - NEGRO</h4>
@@ -75,7 +75,7 @@
     </section>
 
     <section class="youtube">
-        <iframe width="50%" height="500" src="https://www.youtube.com/embed/Dd1VIeTMGQs?si=z7J8IPHgoDlQ4g8f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="50%" height="700" src="https://www.youtube.com/embed/Dd1VIeTMGQs?si=z7J8IPHgoDlQ4g8f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <footer>
@@ -83,16 +83,16 @@
             <div class="info-footer">
                 <img src="img/logo.png" alt="">
                 <ul class="nav-footer">
-                    <li class="menu-list"><a href="#">INICIO</a></li>
-                    <li class="menu-list"><a href="acerca-de.html">ACERCA DE</a></li>
-                    <li class="menu-list"><a href="contactos.html">CONTACTOS</a></li>
-                    <li class="menu-list"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="menu-list list-footer"><a href="#header">INICIO</a></li>
+                    <li class="menu-list list-footer"><a href="#">ACERCA DE</a></li>
+                    <li class="menu-list list-footer"><a href="#">CONTACTOS</a></li>
+                    <li class="menu-list list-footer"><a href="#">NOSOTROS</a></li>
                 </ul>
             </div>
             <div class="newsletter">
                 <form action="www.ejemplo.com">
                     <p>Suscribete al Newslatter</p>
-                    <input type="text" name="email" placeholder="email">
+                    <input class="email" type="text" name="email" placeholder="email">
                     <input type="submit" name="suscribite" value="suscribete" class="btn">
                 </form>
             </div>
@@ -100,9 +100,9 @@
 
         <div class="footerLine"></div>
         <ul class="redes">
-            <a href="https://www.instagram.com/benja_ormeno/" target="_blank"><li><i class='bx bxl-instagram' style='color:#ffffff'  ></i></li></a>
-            <a href="https://www.youtube.com/@bnj_lr9252/featured" target="_blank"><li><i class='bx bxl-youtube' style='color:#ffffff' ></i></li></a>
-            <a href="https://twitter.com/benja_ormeno" target="_blank"><li><i class='bx bxl-twitter' style='color:#ffffff' ></i></li></a>
+            <li href="#" target="_blank"><a><i class='bx bxl-instagram'></i></a></li>
+            <li href="#" target="_blank"><a><i class='bx bxl-youtube'></i></a></li>
+            <li href="#" target="_blank"><a><i class='bx bxl-twitter'></i></a><li>
         </ul>
         <p class="copyright">Derechos reservados © Ormeño Benjamin 2024</p>
     </footer>

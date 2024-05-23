@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Share+Tech+Mono&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +31,7 @@ header::before{
     position: absolute;
     height: 60vh;
     width: 100vw;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0.459) 0%, rgba(0, 0, 0, 0.356) 0%, rgba(0, 0, 0, 0.438) 0%, rgba(177, 39, 39, 0.384) 50%, rgba(0, 0, 0, 0.404) 100%),url(img/fondo.jpg) ;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.759) 0%, rgba(0, 0, 0, 0.656) 0%, rgba(0, 0, 0, 0.738) 0%, rgba(177, 39, 39, 0.684) 50%, rgba(0, 0, 0, 0.704) 100%),url(img/fondo.jpg) ;
     z-index: -1;
     background-size: cover;
     background-position: center;
@@ -102,15 +106,23 @@ header .header-container nav .nav-menu .menu-list{
 }
 
 .btn{
-    height: 30px;
-    width: 90px;
+    height: 40px;
+    width: 100px;
     border-radius: 20px;
     background-color: var(--color-logo);
-    color: white;
+    color:white;
     font-size: 1rem;
     border: none;
-
 }
+
+.btn:hover{
+    color: var(--color-logo);
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+}
+
+
 
 /* header-Media queries */
 
@@ -252,14 +264,14 @@ section .info-detalle{
 /* Info Producto 2 - */
 
 .tecnologia{
-    height: 50vw;
+    height: 30vw;
     margin-top: 350px;
 }
 
 .tecnologia::before{
     content: '';
     position: absolute;
-    height: 50vw;
+    height: 30vw;
     width: 100vw;
     background-image: url(img/fondo\ 2.jpg);
     background-size: cover;
@@ -278,8 +290,9 @@ section .info-detalle{
 /* Info Producto 3 */
 
 .info-producto-3{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    position: relative;
 }
 
 .info-titulo{
@@ -299,11 +312,30 @@ section .info-detalle{
     grid-template-columns: 1fr 1fr 1fr;
     width: 90%;
     margin: auto;
+    position: relative;
+    top: 100px;
+}
+
+.modelos li{
+    transition: all 0.2s ease-in-out;
+
+}
+
+.modelos li:hover{
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+    .beatsimagen{
+        filter: drop-shadow(3px 5px 10px rgba(0,0,0,05));
+        transition: all 0.3s ease-in-out;
+
+    }
 }
 
 .beatsimagen{
     height: 200px;
 }
+
+
 
 .negro, .blanco, .azul{
     display: grid;
@@ -367,6 +399,11 @@ footer{
     font-family: var(--font-primary);
 }
 
+.newsletter .email{
+    border: none;
+    border-radius: 20px;
+}
+
 input{
     height: 30px;
     width: 300px;
@@ -396,6 +433,13 @@ input:focus{
 
 .bx{
     font-size: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bx:hover{
+    color: #ed1c24;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-5px);
 }
 
 .copyright{
@@ -403,6 +447,13 @@ input:focus{
     text-align: center;
     font-family: var(--font-primary);
 }
+
+.list-footer:hover{
+    transform: translateX(5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+
 
 @media (max-width:1300px){
     .footer-container{
